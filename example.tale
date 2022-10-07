@@ -1,0 +1,20 @@
+===Title===
+#tag #hello #other
+This is an example line! #with-a-tag
+* Here is a condition.
+    * Nested choice [$money > 5]
+        Nested response
+        *** nested nested choice
+* Here is another one. -> node_name #another-tag
+* And one with a condition!
+    [hello($counter) > 1]
+    [jump node_name]
+Here is the answer!
+[$counter = 5]
+[if $counter > 45]
+[endif]
+
+[counter(44)]
+[!command("hello", 42)]
+
+===Another===
